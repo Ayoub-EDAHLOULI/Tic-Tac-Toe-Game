@@ -14,7 +14,7 @@ This project is a simple implementation of the classic Tic Tac Toe game built us
   * Navigate into the project directory: cd tic-tac-toe
   * Install dependencies: npm install or yarn install
   * Start the development server: npm run dev or yarn dev
-  * Open your browser and navigate to http://localhost:3000 to play the game.
+  * Open your browser and navigate to play the game.
 
 ##Contributing
 
