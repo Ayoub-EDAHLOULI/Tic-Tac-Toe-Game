@@ -10,7 +10,7 @@ This project is a simple implementation of the classic Tic Tac Toe game built us
  * Logic implemented in JavaScript to handle game mechanics such as checking for win conditions and determining the next move.
 
 ##Usage
-    Clone the repository: git clone (https://github.com/Ayoub-EDAHLOULI/Tic-Tac-Toe-Game.git)
+    Clone the repository: git clone https://github.com/Ayoub-EDAHLOULI/Tic-Tac-Toe-Game.git
     Navigate into the project directory: cd tic-tac-toe
     Install dependencies: npm install or yarn install
     Start the development server: npm run dev or yarn dev
