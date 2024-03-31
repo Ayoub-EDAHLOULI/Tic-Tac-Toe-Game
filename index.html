@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe Game App</title>
+    <!--Font Awesome CDN Link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--CSS Style Link-->
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div class="mainContent">
+      <div class="container">
+        <!--Top-->
+        <div class="topSide">
+          <div class="leftSide">
+            <h2>X</h2>
+            <h2>O</h2>
+          </div>
+          <div class="centerSide">
+            <h2 id="playerTurn">
+              X Turn
+            </h2>
+          </div>
+          <div class="rightSide" id="reset">
+            <img src="./img/Reset.png" alt="">
+          </div>
+        </div>
+
+        <!--Center Board Game-->
+        <div class="centerBoard">
+          <div class="cellBoard" value="0">
+            <h2 class="cellContent">
+              
+            </h2>
+          </div>
+
+          <div class="cellBoard" value="1">
+            <h2 class="cellContent">
+              
+            </h2>
+          </div>
+
+          <div class="cellBoard" value="2">
+            <h2 class="cellContent">
+              
+            </h2>
+          </div>
+
+          <div class="cellBoard" value="3">
+            <h2 class="cellContent">
+              
+            </h2>
+          </div>
+
+          <div class="cellBoard" value="4">
+            <h2 class="cellContent">
+              
+            </h2>
+          </div>
+
+          <div class="cellBoard" value="5">
+            <h2 class="cellContent">
+              
+            </h2>
+          </div>
+
+          <div class="cellBoard" value="6">
+            <h2 class="cellContent">
+              
+            </h2>
+          </div>
+
+          <div class="cellBoard" value="7">
+            <h2 class="cellContent">
+              
+            </h2>
+          </div>
+
+          <div class="cellBoard" value="8">
+            <h2 class="cellContent">
+              
+            </h2>
+          </div>
+        </div>
+      </div>
+
+      <!--Round Winner-->
+      <div class="roundWinner">
+        <div class="content">
+          <h3>YOU WON!</h3>
+          <div class="center">
+            <span id="winner"></span>
+            <h1>Takes the round</h1>
+          </div>
+          <div class="buttons">
+            <div id="next">Next Round</div>
+          </div>
+        </div>
+      </div>
+
+      <!--Draw-->
+      <div class="roundDraw">
+        <div class="content">
+          <h3>Draw!</h3>
+          <div class="center">
+            <h1>No Body Won The Game</h1>
+          </div>
+          <div class="buttons">
+            <div id="playAgin">Play Again</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

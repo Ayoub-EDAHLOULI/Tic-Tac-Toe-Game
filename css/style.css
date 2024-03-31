@@ -1,0 +1,344 @@
+@import url("https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap");
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playpen Sans", cursive;
+}
+
+.mainContent {
+  width: 100%;
+  height: 100vh;
+  background-color: #192a32;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Who Take The Round */
+  /* Draw Style */
+}
+.mainContent .container {
+  width: 35%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 50px;
+  border: 1px solid #f2b237;
+  box-shadow: 0 1px 15px 10px rgb(49, 196, 190);
+  border-radius: 20px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  /*----Center Style Board Game----*/
+}
+.mainContent .container .topSide {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mainContent .container .topSide .leftSide {
+  display: flex;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+}
+.mainContent .container .topSide .leftSide h2 {
+  font-size: 35px;
+  font-weight: 800;
+}
+.mainContent .container .topSide .leftSide h2:first-child {
+  color: #33c2c0;
+}
+.mainContent .container .topSide .leftSide h2:last-child {
+  color: #efb537;
+}
+.mainContent .container .topSide .centerSide {
+  background-color: #1f3540;
+  padding: 2px 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px rgba(16, 30, 35, 0.8);
+}
+.mainContent .container .topSide .centerSide h2 {
+  color: #a8bec9;
+  font-size: 20px;
+}
+.mainContent .container .topSide .rightSide {
+  background-color: #a8bec9;
+  padding: 3px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 2.5px rgb(78, 99, 106);
+}
+.mainContent .container .topSide .rightSide img {
+  width: 20px;
+  color: #192a32;
+}
+.mainContent .container .centerBoard {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 25px;
+  margin-top: 30px;
+}
+.mainContent .container .centerBoard .cellBoard {
+  background-color: #1f3540;
+  height: 120px;
+  border-radius: 10px;
+  box-shadow: 0 8px rgba(16, 30, 35, 0.8);
+  cursor: pointer;
+}
+.mainContent .container .centerBoard .cellBoard .cellContent {
+  font-size: 80px;
+  font-weight: 800;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 33px;
+}
+.mainContent .roundWinner {
+  width: 100%;
+  height: 40vh;
+  position: absolute;
+  background-color: #1f3540;
+  display: none;
+}
+.mainContent .roundWinner .content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 20px;
+}
+.mainContent .roundWinner .content .center {
+  color: #31c4be;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.mainContent .roundWinner .content .center span {
+  font-size: 60px;
+  font-weight: 800;
+}
+.mainContent .roundWinner .content .buttons {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.mainContent .roundWinner .content .buttons div {
+  color: #0c1319;
+  font-weight: 600;
+  cursor: pointer;
+}
+.mainContent .roundWinner .content .buttons div:nth-child(1) {
+  background-color: #a7bec8;
+  padding: 5px 15px;
+  border-radius: 10px;
+  box-shadow: 0 3px rgba(108, 137, 151, 0.8);
+}
+.mainContent .roundWinner .content .buttons div:nth-child(2) {
+  background-color: #f1b136;
+  padding: 5px 15px;
+  border-radius: 10px;
+  box-shadow: 0 3px rgba(204, 139, 19, 0.8);
+}
+.mainContent .roundDraw {
+  width: 100%;
+  height: 40vh;
+  position: absolute;
+  background-color: #1f3540;
+  display: none;
+}
+.mainContent .roundDraw .content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 20px;
+}
+.mainContent .roundDraw .content .center {
+  color: #31c4be;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.mainContent .roundDraw .content .buttons {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.mainContent .roundDraw .content .buttons div {
+  color: #0c1319;
+  font-weight: 600;
+  cursor: pointer;
+}
+.mainContent .roundDraw .content .buttons div:nth-child(1) {
+  background-color: #a7bec8;
+  padding: 5px 15px;
+  border-radius: 10px;
+  box-shadow: 0 3px rgba(108, 137, 151, 0.8);
+}
+
+/* Responsive*/
+/* For Desktop View */
+@media screen and (max-width: 1280px) {
+  .mainContent .container {
+    width: 39%;
+  }
+}
+/* For Desktop View */
+@media screen and (max-width: 1280px) and (min-width: 1024px) {
+  .mainContent .container {
+    width: 42%;
+  }
+}
+/* For Tablet View */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .mainContent .container {
+    width: 60%;
+    height: 59vh;
+  }
+}
+/* For Mobile Portrait View */
+@media screen and (max-width: 480px) and (orientation: portrait) {
+  .mainContent .container {
+    width: 80%;
+    height: 58vh;
+    padding: 20px 30px;
+  }
+  .mainContent .container .centerBoard {
+    gap: 15px;
+    margin-top: 30px;
+  }
+  .mainContent .container .centerBoard .cellBoard {
+    height: 70px;
+  }
+  .mainContent .container .centerBoard .cellBoard .cellContent {
+    font-size: 50px;
+    font-weight: 800;
+    margin-left: 18px;
+  }
+  .mainContent .roundWinner .content,
+  .mainContent .roundDraw .content {
+    row-gap: 15px;
+  }
+  .mainContent .roundWinner .content .center,
+  .mainContent .roundDraw .content .center {
+    -moz-column-gap: 15px;
+         column-gap: 15px;
+  }
+  .mainContent .roundWinner .content .center span,
+  .mainContent .roundDraw .content .center span {
+    font-size: 22px;
+    font-weight: 800;
+  }
+  .mainContent .roundWinner .content .center h1,
+  .mainContent .roundDraw .content .center h1 {
+    font-size: 22px;
+  }
+  .mainContent .roundWinner .content .buttons,
+  .mainContent .roundDraw .content .buttons {
+    display: flex;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+  .mainContent .roundWinner .content .buttons div:nth-child(1),
+  .mainContent .roundDraw .content .buttons div:nth-child(1) {
+    padding: 2px 10px;
+    font-size: 15px;
+  }
+}
+/* For Mobile Portrait View */
+@media screen and (min-width: 180px) and (max-width: 350px) {
+  .mainContent .container {
+    width: 80%;
+    height: 75vh;
+    padding: 20px 30px;
+  }
+  .mainContent .container .topSide .leftSide {
+    display: flex;
+    -moz-column-gap: 5px;
+         column-gap: 5px;
+  }
+  .mainContent .container .topSide .leftSide h2 {
+    font-size: 22px;
+    font-weight: 800;
+  }
+  .mainContent .container .topSide .centerSide {
+    padding: 2px 20px;
+    border-radius: 10px;
+  }
+  .mainContent .container .topSide .centerSide h2 {
+    color: #a8bec9;
+    font-size: 15px;
+  }
+  .mainContent .container .topSide .rightSide {
+    padding: 3px;
+    display: flex;
+  }
+  .mainContent .container .topSide .rightSide img {
+    width: 16px;
+    color: #192a32;
+  }
+  .mainContent .container .centerBoard {
+    gap: 15px;
+    margin-top: 30px;
+  }
+  .mainContent .container .centerBoard .cellBoard {
+    height: 50px;
+  }
+  .mainContent .container .centerBoard .cellBoard .cellContent {
+    font-size: 35px;
+    font-weight: 800;
+    margin-left: 15px;
+  }
+  .mainContent .roundWinner .content,
+  .mainContent .roundDraw .content {
+    row-gap: 15px;
+  }
+  .mainContent .roundWinner .content .center,
+  .mainContent .roundDraw .content .center {
+    -moz-column-gap: 15px;
+         column-gap: 15px;
+  }
+  .mainContent .roundWinner .content .center span,
+  .mainContent .roundDraw .content .center span {
+    font-size: 20px;
+    font-weight: 800;
+  }
+  .mainContent .roundWinner .content .center h1,
+  .mainContent .roundDraw .content .center h1 {
+    font-size: 20px;
+  }
+  .mainContent .roundWinner .content .buttons,
+  .mainContent .roundDraw .content .buttons {
+    display: flex;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+  .mainContent .roundWinner .content .buttons div:nth-child(1),
+  .mainContent .roundDraw .content .buttons div:nth-child(1) {
+    padding: 2px 10px;
+    font-size: 15px;
+  }
+}/*# sourceMappingURL=style.css.map */
